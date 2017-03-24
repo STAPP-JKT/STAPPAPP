@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimaryDark">#003a72</color>
-    <color name="colorPrimary">#303F9F</color>
-    <color name="colorProfileBG">#00294d</color>
-    <color name="colorTertiary">#240070</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="whiteLogin">#F5F5F5</color>
-    <color name="mainBackground">#86aeb5</color>
+    <color name="blueMain">#397398</color>
+    <color name="cyanMain">#bfd1e9</color>
+    <color name="redMain">#e3746b</color>
+    <color name="purpleMain">#941d7e</color>
+    <color name="blueDark">#032b82</color>
+    <color name="whiteMain">#F5F5F5</color>
 </resources>
