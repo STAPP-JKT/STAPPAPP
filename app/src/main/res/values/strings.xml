@@ -12,4 +12,7 @@
 
     <!--Sign In-->
     <string name="signed_in_fmt">Signed in as: %s</string>
+
+    <!-- unknown value -->
+    <string name="action_settings">Action Setting</string>
 </resources>

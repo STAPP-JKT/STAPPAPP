@@ -4,7 +4,7 @@
     android:paddingTop="8dp"
     android:paddingBottom="8dp"
     android:layout_height="wrap_content"
-    android:background="@color/whiteLogin"
+    android:background="@color/whiteMain"
     android:orientation="horizontal">
     <!-- TODO change drawable and everything below -->
     <ImageView

@@ -7,7 +7,7 @@
     <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="178dp"
-    android:background="@color/colorProfileBG"
+    android:background="@color/cyanMain"
     android:orientation="vertical"
     android:weightSum="1">
 
