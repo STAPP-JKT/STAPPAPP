@@ -16,7 +16,7 @@
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_centerHorizontal="true"
-        android:contentDescription="logo"
+        android:contentDescription="@string/logo"
         android:src="@drawable/logo" />
     <!-- Radio Buttons -->
     <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
@@ -25,6 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/logo"
         android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
         android:layout_marginTop="35dp"
         android:orientation="horizontal"
         android:layout_centerHorizontal="true">
@@ -32,6 +33,7 @@
         <RadioButton android:id="@+id/radio_students"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
             android:layout_marginLeft="30dp"
             android:onClick="onRadioButtonClicked"
             android:text="@string/Students"/>
@@ -40,6 +42,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="65dp"
+            android:layout_marginStart="65dp"
             android:onClick="onRadioButtonClicked"
             android:text="@string/Teachers"/>
     </RadioGroup>
