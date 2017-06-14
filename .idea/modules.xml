@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/STAPP.iml" filepath="$PROJECT_DIR$/STAPP.iml" />
       <module fileurl="file://$PROJECT_DIR$/STAPPAPP.iml" filepath="$PROJECT_DIR$/STAPPAPP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/STAPPAPP.iml" filepath="$PROJECT_DIR$/STAPPAPP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
