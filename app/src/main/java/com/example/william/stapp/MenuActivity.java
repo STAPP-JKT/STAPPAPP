@@ -59,7 +59,7 @@ public class MenuActivity extends AppCompatActivity {
 
         mRecyclerView.setHasFixedSize(true);                            // Letting the system know that the list objects are of fixed size
 
-        mAdapter = new (TITLES,ICONS,NAME,EMAIL,PROFILE);       // Creating the Adapter of MyAdapter class(
+        mAdapter = new((TITLES),(ICONS),(NAME),(EMAIL),(PROFILE));       // Creating the Adapter of MyAdapter class(
         // And passing the titles,icons,header view name, header view email,
         // and header view profile picture
         //// TODO: 22/01/2017 Edit line according to ITEMS
