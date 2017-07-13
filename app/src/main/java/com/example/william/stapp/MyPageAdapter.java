@@ -6,11 +6,12 @@ import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 
 /**
  * Created by jason on 15/06/2017.
  */
-
+//// TODO: 25/06/2017 change logic for arraylist 
 public class MyPageAdapter extends PagerAdapter {
     public int getCount(){
         return 5; // change value depending on object within the slider.
@@ -19,7 +20,7 @@ public class MyPageAdapter extends PagerAdapter {
 
         LayoutInflater inflater = (LayoutInflater) collection.getContext()
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-
+//// TODO: 25/06/2017 insert placeholder image 
         int resId = 0;
         switch (position) {
             case 0:
@@ -64,4 +65,4 @@ public class MyPageAdapter extends PagerAdapter {
         return null;
     }
 }
-}
+
