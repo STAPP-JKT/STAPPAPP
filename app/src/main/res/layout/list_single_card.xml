@@ -19,7 +19,7 @@
             android:layout_height="100dp"
             android:layout_gravity="center_horizontal"
             android:scaleType="fitCenter"
-            android:src="@drawable/android"/> <!-- todo make drawable asset or figure out how to random -->
+            android:src="@drawable/logo"/> <!-- todo make drawable asset or figure out how to random -->
         
         <TextView
             android:id="@+id/tvTitle"

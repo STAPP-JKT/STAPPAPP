@@ -28,4 +28,3 @@ public class SectionDataModel {
         this.allItemsInSection = allItemsInSection;
     }
 }
-
