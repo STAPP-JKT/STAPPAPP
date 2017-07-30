@@ -9,9 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.william.stapp.R;
 import com.example.william.stapp.com.stapp.market.SingleItemModel;
-
 import java.util.ArrayList;
 
 /**

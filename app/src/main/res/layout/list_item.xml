@@ -31,11 +31,10 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:theme="@style/MyButton"
             android:text="more"
             android:textColor="#FFF"
             />
-        <!-- todo change needed -->
+        <!-- todo change needed (1. add style)-->
 
     </RelativeLayout>
     <android.support.v7.widget.RecyclerView
@@ -43,6 +42,5 @@
         android:layout_width="match_parent"
         android:layout_height="160dp"
         android:layout_gravity="center_vertical"
-        android:orientation="horizontal"
     />
 </LinearLayout>

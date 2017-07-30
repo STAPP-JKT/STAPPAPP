@@ -2,4 +2,42 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
+<TextView
+    android:id="@+id/EconsIG"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="IGCSE Economics"
+    android:clickable="true"
+    android:textSize="20dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginLeft="90dp"
+    android:layout_marginStart="90dp"
+    android:layout_marginTop="52dp"
+    android:textColor="@color/blueText"/>
+
+    <TextView
+        android:id="@+id/EmathsIG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EconsIG"
+        android:text="IGCSE Extended Mathematics"
+        android:textColor="@color/blueText"
+        android:textSize="20dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/ChemIG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EmathsIG"
+        android:text="IGCSE Chemistry"
+        android:clickable="true"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/blueText"
+        android:textSize="20dp"/>
 </RelativeLayout>
