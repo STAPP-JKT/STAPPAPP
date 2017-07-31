@@ -9,7 +9,7 @@ public class SectionDataModel {
     private String headerTitle;
     private ArrayList<SingleItemModel> allItemsInSection;
 
-    public SectionDataModel(String headerTitle, ArrayList<SingleItemModel> allItemsInSection){
+    public SectionDataModel(){
         this.headerTitle = headerTitle;
         this.allItemsInSection = allItemsInSection;
     }

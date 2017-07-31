@@ -38,26 +38,30 @@ public class MarketplaceMain extends AppCompatActivity {
 
         my_recycler_view.setHasFixedSize(true);
 
-        RecyclerViewdDataAdapter adapter = new RecyclerViewDataAdapter(this, allSampleData);
+        RecyclerViewDataAdapter adapter = new RecyclerViewDataAdapter(this, allSampleData);
 
         my_recycler_view.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
 
         my_recycler_view.setAdapter(adapter);
 
     }
-    public void createDummyData{
-        for (int i =5; i <= 5; i++){
+    public void createDummyData() {
+        for (int i = 1; i <= 5; i++) {
+
             SectionDataModel dm = new SectionDataModel();
 
-            dm.setHeaderTitle("Section"+i); //update if necessary
+            dm.setHeaderTitle("Section " + i);
 
             ArrayList<SingleItemModel> singleItem = new ArrayList<SingleItemModel>();
+            for (int j = 0; j <= 5; j++) {
+                singleItem.add(new SingleItemModel("Item " + j, "URL " + j));
+            }
+
+            dm.setAllItemsInSection(singleItem);
+
+            allSampleData.add(dm);
+
         }
-        for (int j = 0; j <= 5; j++){
-            singleItem.add(new SingleItemModel("Item"+j,"URL"+j));
-        }
-        dm.setAllItemsInSection(singleItem);
-        allSampleData.add(dm);
     }
 }
 

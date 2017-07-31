@@ -9,7 +9,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.william.stapp.com.stapp.market.SingleItemModel;
+import com.example.william.stapp.R;
+
 import java.util.ArrayList;
 
 /**
@@ -56,7 +57,7 @@ public class SectionListDataAdapter extends RecyclerView.Adapter<SectionListData
         protected TextView tvTitle;
         protected ImageView itemImage;
 
-        public SingleItemModel(View view) {
+        public SingleItemRowHolder(View view) {
             super(view);
             this.tvTitle = (TextView) view.findViewById(R.id.tvTitle);
             this.itemImage = (ImageView) view.findViewById(R.id.itemImage);
