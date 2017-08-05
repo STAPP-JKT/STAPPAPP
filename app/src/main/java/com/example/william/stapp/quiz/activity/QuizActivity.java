@@ -1,7 +1,9 @@
-package com.example.william.stapp;
+package com.example.william.stapp.quiz.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+
+import com.example.william.stapp.R;
 
 /**
  * Created by jason on 08/06/2017.

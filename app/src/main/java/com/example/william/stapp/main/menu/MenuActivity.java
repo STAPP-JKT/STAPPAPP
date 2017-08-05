@@ -1,4 +1,4 @@
-package com.example.william.stapp;
+package com.example.william.stapp.main.menu;
 
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
@@ -12,6 +12,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.example.william.stapp.R;
 
 
 public class MenuActivity extends AppCompatActivity {
@@ -20,9 +21,9 @@ public class MenuActivity extends AppCompatActivity {
     //This Icons And Titles Are hold in an Array as you can see
 
     String TITLES[] = {"Home","Events","Mail","Shop","Travel"};
-    int ICONS[] = {R.drawable.ic_home,R.drawable.ic_events,R.drawable.ic_mail,R.drawable.ic_shop,R.drawable.ic_travel}; //TODO:change the symbols Date 22/01/17
-
-    //Similarly we Create a String Resource for the name and email in the header view
+    int ICONS[] = {R.drawable.ic_settings,R.drawable.ic_events,R.drawable.ic_mail,R.drawable.ic_shop,R.drawable.ic_travel}; //TODO:change the symbols Date 22/01/17
+    //// TODO: 06-Aug-17 download drawable file gdrive implement 
+    // Similarly we Create a String Resource for the name and email in the header view
     //And we also create a int resource for profile picture in the header view
 
     String NAME = "USER Name";
@@ -59,7 +60,7 @@ public class MenuActivity extends AppCompatActivity {
 
         mRecyclerView.setHasFixedSize(true);                            // Letting the system know that the list objects are of fixed size
 
-        mAdapter = new((TITLES),(ICONS),(NAME),(EMAIL),(PROFILE));       // Creating the Adapter of MyAdapter class(
+        mAdapter = new(TITLES;ICONS;NAME;EMAIL;PROFILE);       // Creating the Adapter of MyAdapter class(
         // And passing the titles,icons,header view name, header view email,
         // and header view profile picture
         //// TODO: 22/01/2017 Edit line according to ITEMS

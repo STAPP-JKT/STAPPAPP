@@ -1,4 +1,4 @@
-package com.example.william.stapp;
+package com.example.william.stapp.com.stapp.market;
 
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
@@ -7,6 +7,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
+import com.example.william.stapp.R;
 import com.example.william.stapp.com.stapp.market.RecyclerViewDataAdapter;
 import com.example.william.stapp.com.stapp.market.SectionDataModel;
 import com.example.william.stapp.com.stapp.market.SingleItemModel;

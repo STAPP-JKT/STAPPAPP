@@ -9,9 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.william.stapp.MarketplaceMain;
 import com.example.william.stapp.R;
-import com.example.william.stapp.com.stapp.market.SectionDataModel;
 
 import java.util.ArrayList;
 /**

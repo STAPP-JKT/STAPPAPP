@@ -1,4 +1,4 @@
-package com.example.william.stapp;
+package com.example.william.stapp.main.menu;
 
 /**
  * Created by jason on 20/01/2017.
@@ -11,7 +11,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import com.example.william.stapp.R;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
