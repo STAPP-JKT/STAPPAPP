@@ -7,9 +7,16 @@
     <string name="Logout">Logout</string>
     <string name="TODO">TODO</string>
     <string name="title_home">Home</string>
-    <!-- main menu (Drawer string -->
+
+    <!-- main menu (Drawer) string -->
     <string name="openDrawer" />
     <string name="closeDrawer" />
+
+    <!-- main menu (Drawer) item -->
+    <string-array name="navigation_drawer_item_array">
+        <item>Privacy Settings</item>
+        <item>Achievements</item>
+    </string-array>
 
     <string name="loading">Loading</string>
     <string name="signed_out">Successfully signed out</string>
