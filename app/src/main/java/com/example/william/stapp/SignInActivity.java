@@ -4,13 +4,17 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.IdRes;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
+import android.widget.Button;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
+import com.example.william.stapp.main.menu.MenuActivity;
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
@@ -21,6 +25,8 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.OptionalPendingResult;
 import com.google.android.gms.common.api.ResultCallback;
 import com.google.android.gms.common.api.Status;
+
+import static android.R.attr.id;
 
 /**
  * Created by William & Jason on 01/09/2017.
@@ -196,20 +202,32 @@ public class SignInActivity extends AppCompatActivity implements
                 break;
         }
     }
+    private RadioGroup radioGroup;
+    private RadioButton radioStudent,radioTeacher;
+    private Button next;
     //Radio Button Logic
-    public void onRadioButtonClicked(View view){
-        //to check whether the button is checked or not
-        boolean checked = ((RadioButton)view).isChecked();
-        //check which button is clicked
-        switch (view.getId()){
-            case R.id.radio_students:
-                if (checked)
-                    //TODO: activity insert student activity redirect
-                break;
-            case R.id.radio_teachers:
-                if (checked)
-                    //TODO: insert teacher activity redirect
-                break;
-        }
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_signin);
+
+        radioGroup =(RadioGroup)findViewById(R.id.radio);
+        radioStudent=(RadioButton)findViewById(R.id.radio_students);
+        radioTeacher=(RadioButton)findViewById(R.id.radio_teachers);
+        next=(Button)findViewById(R.id.sign_in_button);
+
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(radioStudent.isChecked()){
+                    Intent intent = new Intent(getBaseContext() , StudentSignIn.class);
+                    startActivity(intent);
+                }else if(radioTeacher.isChecked()){
+                    Intent intent = new Intent(getBaseContext(), TeacherSignIn.class);
+                    startActivity(intent);
+                }
+
+            }
+        });
     }
 }
