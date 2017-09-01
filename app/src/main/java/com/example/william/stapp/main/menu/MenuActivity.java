@@ -10,6 +10,8 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.ActionBarContainer;
+import android.support.v7.widget.ActionBarOverlayLayout;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
@@ -43,10 +45,10 @@ public class MenuActivity extends Activity {
             setupToolbar();
 
             DataModel[] drawerItem = new DataModel[3];
-
+            //// TODO: 28-Aug-17 add drawable asset
             drawerItem[0] = new DataModel(R.drawable.privset, "Privacy Setting");
             drawerItem[1] = new DataModel(R.drawable.stats,"Achievements");
-            //todo add if needed
+
             getSupportActionBar().setDisplayHomeAsUpEnabled(false);
             getSupportActionBar().setHomeButtonEnabled(true);
 
@@ -72,7 +74,7 @@ public class MenuActivity extends Activity {
                     fragment = new PrivsetFragment();
                     break;
 
-                case 1
+                case 1:
                     fragment = new StatsFragment();
                     break;
 

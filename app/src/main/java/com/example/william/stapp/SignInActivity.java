@@ -207,8 +207,7 @@ public class SignInActivity extends AppCompatActivity implements
     private Button next;
     //Radio Button Logic
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected void onCreate(Bundle savedInstanceState){
         setContentView(R.layout.activity_signin);
 
         radioGroup =(RadioGroup)findViewById(R.id.radio);

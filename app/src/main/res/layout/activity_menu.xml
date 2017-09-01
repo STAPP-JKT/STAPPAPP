@@ -31,6 +31,7 @@
         android:layout_height="match_parent"/>
     <!--Navigation view -->
     <ListView
+        android:id="@+id/left_drawer"
         android:layout_width="240dp"
         android:layout_height="match_parent"
         android:choiceMode="singleChoice"
