@@ -12,5 +12,7 @@ public class TeacherSignIn extends AppCompatActivity {
     protected void onCreate(Bundle savedInstancesState){
         super.onCreate(savedInstancesState);
         setContentView(R.layout.teacher_sign_in);
+        findViewById(R.id.submitbutton2).setOnClickListener();
+
     }
 }

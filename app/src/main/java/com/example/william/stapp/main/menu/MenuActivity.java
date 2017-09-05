@@ -1,6 +1,7 @@
 package com.example.william.stapp.main.menu;
 
 import android.app.Activity;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -24,7 +25,7 @@ import com.example.william.stapp.R;
 
 
 
-public class MenuActivity extends Activity {
+public class MenuActivity extends FragmentActivity {
 
         private String[] mNavigationDrawerItemsTitles;
         private DrawerLayout mDrawerLayout;

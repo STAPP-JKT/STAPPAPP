@@ -207,9 +207,9 @@ public class SignInActivity extends AppCompatActivity implements
     private Button next;
     //Radio Button Logic
     @Override
-    protected void onCreate(Bundle savedInstanceState){
-        setContentView(R.layout.activity_signin);
 
+    protected void onCreate(Bundle savedInstanceState){
+// // TODO: 01-Sep-17 rearrange
         radioGroup =(RadioGroup)findViewById(R.id.radio);
         radioStudent=(RadioButton)findViewById(R.id.radio_students);
         radioTeacher=(RadioButton)findViewById(R.id.radio_teachers);
