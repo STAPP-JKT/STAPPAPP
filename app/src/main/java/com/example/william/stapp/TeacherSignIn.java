@@ -18,7 +18,7 @@ public class TeacherSignIn extends AppCompatActivity {
     protected void onCreate(Bundle savedInstancesState) {
         super.onCreate(savedInstancesState);
         setContentView(R.layout.teacher_sign_in);
-        findViewById(R.id.submitbutton2).setOnClickListener();
+        findViewById(R.id.submitbutton2).setOnClickListener((View.OnClickListener) this);
         next = (Button) findViewById(R.id.submitbutton2);
 
         next.setOnClickListener(new View.OnClickListener() {
