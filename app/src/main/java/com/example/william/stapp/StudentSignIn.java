@@ -17,9 +17,9 @@ public class StudentSignIn extends AppCompatActivity {
     @Override
     protected void onCreate (Bundle savedInstancesState) {
         super.onCreate(savedInstancesState);
-        setContentView(R.layout.teacher_sign_in);
-        findViewById(R.id.submitbutton2).setOnClickListener((View.OnClickListener) this);
-        next = (Button) findViewById(R.id.submitbutton2);
+        setContentView(R.layout.student_sign_in);
+        findViewById(R.id.submitbutton1).setOnClickListener((View.OnClickListener) this);
+        next = (Button) findViewById(R.id.submitbutton1);
 
         next.setOnClickListener(new View.OnClickListener() {
             @Override
