@@ -1,4 +1,4 @@
-package com.example.william.stapp;
+package com.example.william.stapp.SignIn;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.william.stapp.R;
 import com.example.william.stapp.main.menu.MenuActivity;
 
 /**

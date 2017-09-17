@@ -1,4 +1,4 @@
-package com.example.william.stapp;
+package com.example.william.stapp.quiz.activity;
 import java.util.*;
 /**
  * Created by jason on 08/06/2017.
