@@ -14,7 +14,7 @@ import com.example.william.stapp.main.menu.MenuActivity;
  */
 
 public class TeacherSignIn extends AppCompatActivity {
-    private Button next
+    private Button next;
     @Override
     protected void onCreate(Bundle savedInstancesState) {
         super.onCreate(savedInstancesState);

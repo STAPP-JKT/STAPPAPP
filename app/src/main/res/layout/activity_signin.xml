@@ -21,30 +21,31 @@
     <!-- Radio Buttons -->
     <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/radio"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_below="@+id/logo"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="35dp"
-        android:orientation="horizontal"
-        android:layout_centerHorizontal="true">
+        android:layout_marginTop="22dp"
+        android:orientation="horizontal">
 
-        <RadioButton android:id="@+id/radio_students"
+        <RadioButton
+            android:id="@+id/radio_students"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
             android:layout_marginLeft="30dp"
+            android:layout_marginStart="50dp"
             android:onClick="onRadioButtonClicked"
-            android:text="@string/Students"/>
+            android:text="@string/Students" />
 
-        <RadioButton android:id="@+id/radio_teachers"
+        <RadioButton
+            android:id="@+id/radio_teachers"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="65dp"
             android:layout_marginStart="65dp"
             android:onClick="onRadioButtonClicked"
-            android:text="@string/Teachers"/>
+            android:text="@string/Teachers" />
     </RadioGroup>
     <!-- Google Sign In button -->
     <com.google.android.gms.common.SignInButton
