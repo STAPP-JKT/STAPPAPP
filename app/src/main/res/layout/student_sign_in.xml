@@ -2,11 +2,27 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First Name"
+        android:id="@+id/firstnmstudent"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Middle Name (Optional)"
+        android:id="@+id/middlenmstudent"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Last Name"
+        android:id="@+id/lastnmstudent"/>
 <!-- change ImageView size to banner -->
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imgschool1"/>
+
     <android.support.v7.widget.AppCompatSpinner
         android:layout_width="match_parent"
         android:layout_height="fill_parent"/>
