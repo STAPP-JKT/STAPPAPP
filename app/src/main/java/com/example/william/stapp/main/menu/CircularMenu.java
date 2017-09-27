@@ -29,7 +29,7 @@ public class CircularMenu extends AppCompatActivity {
                 public void onMenuSelected(int index) {
                     //TODO this happens when selected
                 }
-            })
+            });
 
     }
 

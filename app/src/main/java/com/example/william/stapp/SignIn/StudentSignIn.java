@@ -24,7 +24,7 @@ public class StudentSignIn extends AppCompatActivity {
     private EditText editText1;
     private EditText editText2;
     private EditText editText3;
-    @Override //// TODO: 22-Sep-17 see if ovveride is on the right position 
+    @Override // TODO: 22-Sep-17 see if ovveride is on the right position
     protected void onCreate (Bundle savedInstancesState) {
         super.onCreate(savedInstancesState);
         setContentView(R.layout.student_sign_in);
@@ -38,7 +38,7 @@ public class StudentSignIn extends AppCompatActivity {
         editText1.setText(credentials.getString("tag", "Default Value"));
         editText2.setText(credentials.getString("tag", "Default Value"));
         editText3.setText(credentials.getString("tag", "Default Value"));
-
+        // TODO: 26-Sep-17 change "tag" and "default value"
         findViewById(R.id.submitbutton1).setOnClickListener((View.OnClickListener) this);
         next = (Button) findViewById(R.id.submitbutton1);
 
@@ -52,7 +52,7 @@ public class StudentSignIn extends AppCompatActivity {
 
                     ((InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE)).hideSoftInputFromWindow(editText1.getWindowToken(),0);
                 }
-                if(editText2.getText().length()>0){
+                if(editText2.getText().length()>=0){
                     makeTag(editText2.getText().toString());
 
                     ((InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE)).hideSoftInputFromWindow(editText2.getWindowToken(),0);
@@ -69,7 +69,7 @@ public class StudentSignIn extends AppCompatActivity {
     private void makeTag(String tag){
         String or = credentials.getString(tag, null);
         SharedPreferences.Editor preferencesEditor = credentials.edit();
-        preferencesEditor.putString("tag",tag); //change this line to this
+        preferencesEditor.putString("tag",tag);
         preferencesEditor.commit();
     }
 

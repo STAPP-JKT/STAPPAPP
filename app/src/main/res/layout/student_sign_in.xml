@@ -6,22 +6,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="First Name"
-        android:id="@+id/firstnmstudent"/>
+        android:id="@+id/firstnmstudent"
+        android:inputType="textPersonName"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Middle Name (Optional)"
-        android:id="@+id/middlenmstudent"/>
+        android:id="@+id/middlenmstudent"
+        android:inputType="textPersonName" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Last Name"
-        android:id="@+id/lastnmstudent"/>
+        android:id="@+id/lastnmstudent"
+        android:inputType="textPersonName"/>
 <!-- change ImageView size to banner -->
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imgschool1"/>
+        android:id="@+id/imgschool1" />
 
     <android.support.v7.widget.AppCompatSpinner
         android:layout_width="match_parent"
