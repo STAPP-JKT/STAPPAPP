@@ -8,35 +8,37 @@
     android:layout_height="match_parent"
     android:elevation="7dp">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+        </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <include
-            android:id="@+id/tool_bar"
-            layout="@layout/tool_bar">
-        </include>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
+            android:id="@+id/toolbar"
+            layout="@layout/tool_bar" />
     </LinearLayout>
-
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/RecyclerView"
-        android:layout_width="320dp"
+    <!-- main content view -->
+    <FrameLayout
+        android:id="@+id/framemain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <!--Navigation view -->
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="240dp"
         android:layout_height="match_parent"
-        android:layout_gravity="left"
-
-        android:background="@color/whiteMain"
-        android:scrollbars="vertical">
-
-    </android.support.v7.widget.RecyclerView>
+        android:choiceMode="singleChoice"
+        android:dividerHeight="0dp"
+        android:background="@color/blueDark"
+        android:divider="@android:color/transparent"
+        android:layout_gravity="start"/>
 
 
 </android.support.v4.widget.DrawerLayout>
