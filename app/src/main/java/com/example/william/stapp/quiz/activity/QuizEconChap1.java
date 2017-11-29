@@ -2,16 +2,14 @@ package com.example.william.stapp.quiz.activity;
 
 import android.os.Bundle;
 
-import com.example.william.stapp.R;
-
 /**
  * Created by jason on 01-Sep-17.
  */
 
-public class QuizEconChap1 {
+public class QuizEconChap1 extends QuizActivity {
     @Override
-    protected void OnCreate(Bundle savedInstanceState){
+    protected void OnCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView()
+        setContentView();//// TODO: 25-Oct-17 set fucking xml layout file
     }
 }

@@ -1,16 +1,12 @@
 package com.example.william.stapp.com.stapp.market;
 
 import android.os.Bundle;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
 import com.example.william.stapp.R;
-import com.example.william.stapp.com.stapp.market.RecyclerViewDataAdapter;
-import com.example.william.stapp.com.stapp.market.SectionDataModel;
-import com.example.william.stapp.com.stapp.market.SingleItemModel;
 
 import java.util.ArrayList;
 
@@ -19,7 +15,7 @@ import java.util.ArrayList;
  */
 
 public class MarketplaceMain extends AppCompatActivity {
-  private Toolbar toolbar;
+    private Toolbar toolbar;
 
     ArrayList<SectionDataModel> allSampleData;
 
@@ -46,6 +42,7 @@ public class MarketplaceMain extends AppCompatActivity {
         my_recycler_view.setAdapter(adapter);
 
     }
+
     public void createDummyData() {
         for (int i = 1; i <= 5; i++) {
 

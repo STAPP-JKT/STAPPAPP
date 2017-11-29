@@ -15,24 +15,22 @@ import com.hitomi.cmlibrary.OnMenuSelectedListener;
 public class CircularMenu extends AppCompatActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.circular_menu);
 
-        CircleMenu circleMenu = (CircleMenu)findViewById(R.id.circle_menu);
-        //TODO circleMenu.setMainMenu(Color.parseColor("#main color"),add icon,remove icon)
-            .addSubMenu(Color.parseColor("#color"),drawable)
-            .addSubMenu
-            .setOnMenuSelectedListener(new OnMenuSelectedListener() {
-                @Override
-                public void onMenuSelected(int index) {
-                    //TODO this happens when selected
-                }
-            });
+        CircleMenu circleMenu = (CircleMenu) findViewById(R.id.circle_menu);
+        circleMenu.setMainMenu(Color.parseColor("#main color"), add icon, remove icon)//// TODO: 25-Oct-17 add icon (Stapp logo)
+                .addSubMenu(Color.parseColor("#color"), drawable)
+                .addSubMenu
+                .setOnMenuSelectedListener(new OnMenuSelectedListener() {
+                    @Override
+                    public void onMenuSelected(int index) {
+                        //TODO this happens when selected
+                    }
+                });
 
     }
-
 
 
 }

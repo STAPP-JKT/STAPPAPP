@@ -1,6 +1,7 @@
 package com.example.william.stapp.com.stapp.market;
 
 import java.util.ArrayList;
+
 /**
  * Created by jason on 06/07/2017.
  */
@@ -9,14 +10,16 @@ public class SectionDataModel {
     private String headerTitle;
     private ArrayList<SingleItemModel> allItemsInSection;
 
-    public SectionDataModel(){
+    public SectionDataModel() {
         this.headerTitle = headerTitle;
         this.allItemsInSection = allItemsInSection;
     }
-    public String getHeaderTitle(){
+
+    public String getHeaderTitle() {
         return headerTitle;
     }
-    public void setHeaderTitle(String headerTitle){
+
+    public void setHeaderTitle(String headerTitle) {
         this.headerTitle = headerTitle;
     }
 

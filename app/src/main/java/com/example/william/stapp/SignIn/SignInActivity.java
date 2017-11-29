@@ -7,7 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
-import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -40,7 +39,7 @@ public class SignInActivity extends AppCompatActivity implements
     private ProgressDialog mProgressDialog;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState){
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         //remove title bar
@@ -53,15 +52,15 @@ public class SignInActivity extends AppCompatActivity implements
 
         //Configure sign-in to request the user's ID,email address, and basic profile.
         //ID and basic profile are included in DEFAULT_SIGN_IN.
-        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN )
+        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
                 .build();
 
         // Build a GoogleApiClient with access to the Google Sign-In API and the
         // options specified by gso.
         mGoogleApiClient = new GoogleApiClient.Builder(this)
-                .enableAutoManage(this/*Fragment Activity*/,this/*OnConnectionFailedListener*/)
-                .addApi(Auth.GOOGLE_SIGN_IN_API , gso)
+                .enableAutoManage(this/*Fragment Activity*/, this/*OnConnectionFailedListener*/)
+                .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
                 .build();
 
         SignInButton signInButton = (SignInButton) findViewById(R.id.sign_in_button);
@@ -69,7 +68,7 @@ public class SignInActivity extends AppCompatActivity implements
     }
 
     @Override
-    public void onStart(){
+    public void onStart() {
         super.onStart();
 
         OptionalPendingResult<GoogleSignInResult> opr = Auth.GoogleSignInApi.silentSignIn(mGoogleApiClient);
@@ -190,39 +189,29 @@ public class SignInActivity extends AppCompatActivity implements
         }
     }
 
+
+    //Radio Button Logic
+    private RadioGroup radioGroup = (RadioGroup)
+
+            findViewById(R.id.radio);
+
+    private RadioButton radioStudent = (RadioButton)
+
+            findViewById(R.id.radio_students);
+
+    private RadioButton radioTeacher = (RadioButton)
+
+            findViewById(R.id.radio_teachers);
+
+
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.sign_in_button:
-                signIn();
-                break;
+        if (radioStudent.isChecked()) {
+            Intent intent = new Intent(getBaseContext(), StudentSignIn.class);
+            startActivity(intent);
+        } else if (radioTeacher.isChecked()) {
+            Intent intent = new Intent(getBaseContext(), TeacherSignIn.class);
+            startActivity(intent);
         }
-    }
-    private RadioGroup radioGroup;
-    private RadioButton radioStudent,radioTeacher;
-    private Button next;
-    //Radio Button Logic
-    @Override
-
-    protected void onCreate(Bundle savedInstanceState){
-// // TODO: 01-Sep-17 rearrange
-        radioGroup =(RadioGroup)findViewById(R.id.radio);
-        radioStudent=(RadioButton)findViewById(R.id.radio_students);
-        radioTeacher=(RadioButton)findViewById(R.id.radio_teachers);
-        next=(Button)findViewById(R.id.sign_in_button);
-
-        next.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(radioStudent.isChecked()){
-                    Intent intent = new Intent(getBaseContext() , StudentSignIn.class);
-                    startActivity(intent);
-                }else if(radioTeacher.isChecked()){
-                    Intent intent = new Intent(getBaseContext(), TeacherSignIn.class);
-                    startActivity(intent);
-                }
-
-            }
-        });
     }
 }

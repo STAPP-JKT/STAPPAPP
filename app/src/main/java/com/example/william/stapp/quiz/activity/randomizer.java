@@ -1,5 +1,8 @@
 package com.example.william.stapp.quiz.activity;
-import java.util.*;
+
+import java.util.ArrayList;
+import java.util.Random;
+
 /**
  * Created by jason on 08/06/2017.
  */
@@ -7,7 +10,7 @@ import java.util.*;
 public class randomizer {
     public int randomize(ArrayList<Integer> allTheShit, int chooseRange) {
         Random makLu = new Random();
-        int temporary = makLu   .nextInt(chooseRange);
+        int temporary = makLu.nextInt(chooseRange);
         int tempoObject = allTheShit.get(temporary);
         allTheShit.remove(temporary);
         allTheShit.add(tempoObject);

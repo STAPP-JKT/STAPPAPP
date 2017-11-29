@@ -1,4 +1,5 @@
 package com.example.william.stapp.com.stapp.market;
+
 import android.content.Context;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -12,6 +13,7 @@ import android.widget.Toast;
 import com.example.william.stapp.R;
 
 import java.util.ArrayList;
+
 /**
  * Created by jason on 08/07/2017.
  */
@@ -54,8 +56,7 @@ public class RecyclerViewDataAdapter extends RecyclerView.Adapter<RecyclerViewDa
             public void onClick(View v) {
 
 
-                Toast.makeText(v.getContext(), "click event on more, "+sectionName , Toast.LENGTH_SHORT).show();
-
+                Toast.makeText(v.getContext(), "click event on more, " + sectionName, Toast.LENGTH_SHORT).show();
 
 
             }
@@ -84,13 +85,12 @@ public class RecyclerViewDataAdapter extends RecyclerView.Adapter<RecyclerViewDa
         protected Button btnMore;
 
 
-
         public ItemRowHolder(View view) {
             super(view);
 
             this.itemTitle = (TextView) view.findViewById(R.id.itemTitle);
             this.recycler_view_list = (RecyclerView) view.findViewById(R.id.recycler_view_list);
-            this.btnMore= (Button) view.findViewById(R.id.btnMore);
+            this.btnMore = (Button) view.findViewById(R.id.btnMore);
 
 
         }

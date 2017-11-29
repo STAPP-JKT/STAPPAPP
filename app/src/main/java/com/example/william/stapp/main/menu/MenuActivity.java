@@ -1,26 +1,17 @@
 package com.example.william.stapp.main.menu;
 
-import android.app.Activity;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.ActionBarContainer;
-import android.support.v7.widget.ActionBarOverlayLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
 import com.example.william.stapp.R;
 
 
@@ -60,7 +51,9 @@ public class MenuActivity extends FragmentActivity {
             mDrawerLayout.setDrawerListener(mDrawerToggle);
             setupDrawerToggle();
         }
-        private class DrawerItemClickListner implements ListView.onItemClickListner{
+
+
+    private class DrawerItemClickListner implements ListView.onItemClickListner {
 
             @Override
             public void onItemClick(AdapterView<?>parent, View view, int position, long id){
@@ -69,7 +62,7 @@ public class MenuActivity extends FragmentActivity {
         }
         private void selectItem(int position){
             Fragment fragment = null;
-
+            //// TODO: 25-Oct-17 set fragment logic
             switch (position){
                 case 0:
                     fragment = new PrivsetFragment();

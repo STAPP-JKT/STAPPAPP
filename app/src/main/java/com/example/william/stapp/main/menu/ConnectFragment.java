@@ -12,13 +12,14 @@ import com.example.william.stapp.R;
  * Created by jason on 09-Aug-17.
  */
 
+
 public class ConnectFragment extends Fragment {
 
-    public ConnectFragment(){
+    public ConnectFragment() {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_connect, container, false);
         return rootView;
     }

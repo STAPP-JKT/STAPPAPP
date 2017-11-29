@@ -9,11 +9,8 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
-import android.content.SharedPreferences;
-import android.content.SharedPreferences.Editor;
 
 import com.example.william.stapp.R;
-import com.example.william.stapp.main.menu.MenuActivity;
 
 /**
  * Created by jason on 26/06/2017.
@@ -31,11 +28,11 @@ public class TeacherSignIn extends AppCompatActivity {
         super.onCreate(savedInstancesState);
         setContentView(R.layout.teacher_sign_in);
 
-        editText1 = (EditText)findViewById(R.id.firstnmteacher);
-        editText2 = (EditText)findViewById(R.id.middlenmteacher);
-        editText3 = (EditText)findViewById(R.id.lastnmteacher);
+        editText1 = (EditText) findViewById(R.id.firstnmteacher);
+        editText2 = (EditText) findViewById(R.id.middlenmteacher);
+        editText3 = (EditText) findViewById(R.id.lastnmteacher);
 
-        credentials = getSharedPreferences("credentials",MODE_PRIVATE);
+        credentials = getSharedPreferences("credentials", MODE_PRIVATE);
 
         editText1.setText(credentials.getString("tag", "default value"));
         editText2.setText(credentials.getString("tag", "default value"));
@@ -50,26 +47,27 @@ public class TeacherSignIn extends AppCompatActivity {
             public void onClick(View i) {
                 Intent intent = new Intent(getBaseContext(), TeacherSignIn2.class);
                 startActivity(intent);
-                if (editText1.getText().length()>0){
+                if (editText1.getText().length() > 0) {
                     makeTag(editText1.getText().toString());
-                    ((InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE)).hideSoftInputFromWindow(editText1.getWindowToken(),0);
+                    ((InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE)).hideSoftInputFromWindow(editText1.getWindowToken(), 0);
                 }
-                if (editText2.getText().length()>=0){
+                if (editText2.getText().length() >= 0) {
                     makeTag(editText2.getText().toString());
-                    ((InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE)).hideSoftInputFromWindow(editText2.getWindowToken(),0);
+                    ((InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE)).hideSoftInputFromWindow(editText2.getWindowToken(), 0);
                 }
-                if (editText3.getText().length()>0){
+                if (editText3.getText().length() > 0) {
                     makeTag(editText3.getText().toString());
-                    ((InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE)).hideSoftInputFromWindow(editText3.getWindowToken(),0);
+                    ((InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE)).hideSoftInputFromWindow(editText3.getWindowToken(), 0);
                 }
                 //// TODO: 27-Sep-17 may need to add additional arguments for backend use 
             }
         });
     }
-    public void makeTag(String tag){
+
+    public void makeTag(String tag) {
         String or = credentials.getString(tag, null);
         SharedPreferences.Editor preferencesEditor = credentials.edit();
-        preferencesEditor.putString("tag",tag);
+        preferencesEditor.putString("tag", tag);
         preferencesEditor.commit();
     }
 
